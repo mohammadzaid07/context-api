@@ -4,7 +4,7 @@ This is a simple React app demonstrating the use of **React Context API** to man
 
 ## 🌐 Live Demo
 
-🔗 [Click here to view the app](https://mohammadzaid07.github.io/Fruit-Slasher/context-api/)
+🔗 [Click here to view the app](https://mohammadzaid07.github.io/context-api/)
 
 ## 🚀 Features
 
