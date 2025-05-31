@@ -1,12 +1,34 @@
-# React + Vite
+# 🧠 React Context API Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React app demonstrating the use of **React Context API** to manage user authentication state globally. The app consists of two main components — `Login` and `Profile` — and uses context to share state between them.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Click here to view the app](https://mohammadzaid07.github.io/Fruit-Slasher/context-api/)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ Built with React + Vite
+- 🔐 Global user state management using React Context API
+- 🧾 Simple login form to set user data
+- 🙋 Profile page that conditionally renders based on login state
+
+## 🧩 Components
+
+- **Login.jsx**: Accepts username and password, updates user state on submission.
+- **Profile.jsx**: Displays welcome message if user is logged in; otherwise, asks to log in.
+- **UserContext.js**: Context object for user state.
+- **UserContextProvider.jsx**: Provides context with `user` and `setUser`.
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- React Context API
+- JavaScript
+
+## 🧪 How It Works
+
+1. The `UserContextProvider` wraps the entire app and provides a `user` object and a `setUser` function.
+2. The `Login` component updates the context when a user submits the form.
+3. The `Profile` component consumes the context and conditionally renders based on whether a user is logged in.
